@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Personal Homepage</title>
+  <meta name="description" content="Personal homepage, research, projects and publications.">
+
+  <style>
+    :root {
+      --ink: #18283e;
+      --muted: #64748b;
+      --line: #e5eaf0;
+      --bg: #ffffff;
+      --accent: #315c8c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Noto Sans SC", sans-serif;
+      line-height: 1.8;
+    }
+
+    .container {
+      width: min(880px, 90%);
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav a, a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    header { padding: 68px 0 48px; }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 48px);
+      letter-spacing: -1px;
+      margin: 0 0 8px;
+    }
+
+    .subtitle { color: var(--muted); }
+
+    section {
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 { font-size: 21px; margin: 0 0 16px; }
+
+    .item { margin: 18px 0; }
+
+    .item p {
+      margin: 4px 0;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 2px 9px;
+      margin: 4px 4px 4px 0;
+      font-size: 13px;
+    }
+
+    footer {
+      padding: 30px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <strong>Your Name</strong>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Your Name</h1>
+      <div class="subtitle">
+        Computer Science · Research · Engineering
+      </div>
+      <p>
+        I am interested in multimodal learning, generative models,
+        intelligent systems, and embodied AI.
+      </p>
+      <p>
+        <a href="cv.pdf">Curriculum Vitae ↗</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/yourusername">GitHub ↗</a>
+      </p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a student working on machine learning and intelligent
+        systems. This website presents my research, publications,
+        engineering projects, and open-source work.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <span class="tag">Multimodal Learning</span>
+      <span class="tag">Generative Models</span>
+      <span class="tag">Embodied AI</span>
+      <span class="tag">Robotics</span>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="item">
+        <strong>Project Name One</strong>
+        <p>Problem, technical approach, personal contribution,
+          and key results.</p>
+        <a href="#">Code ↗</a>
+      </div>
+      <div class="item">
+        <strong>Project Name Two</strong>
+        <p>Briefly describe the engineering challenge and
+          the solution you implemented.</p>
+        <a href="#">Code ↗</a>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="item">
+        <strong>Paper Title</strong>
+        <p>Your Name, Co-author, et al.</p>
+        <p>Conference or Journal, Year.</p>
+        <a href="#">Paper ↗</a>
+        &nbsp;·&nbsp;
+        <a href="#">Code ↗</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername">
+        github.com/yourusername</a></p>
+    </section>
+
+    <footer>
+      © 2026 Your Name · Personal Homepage
+    </footer>
+  </div>
+</body>
+</html>
